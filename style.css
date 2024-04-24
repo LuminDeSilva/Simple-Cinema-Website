@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0F0F0F;
+}
+
+header {
+    background-color: #0F0F0F;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 50px;
+}
+
+.logo h2{
+    position: absolute;
+    left: 120px;
+    top: 30px;
+    font-size: large;
+}
+
+#mainVisual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#siteIntroduction {
+    background-color: #0F0F0F;
+    padding: 40px;
+    text-align: justify;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: antiquewhite;
+    border-color: #333;
+}
+
+.search-icon {
+    color: white;
+    position: relative;
+}
+
+.input-group {
+    position: relative;
+    width: 300px;
+}
+
+.input-group .position-absolute {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px !important; 
+    pointer-events: none;
+    z-index: 3;
+}
+
+::placeholder {
+    color: white !important;
+    padding-left: 30px !important;
+}
+
+#contactUs {
+    padding: 40px 0;
+}
+
+#contactUs .form-group {
+    margin-bottom: 20px;
+}
+
+#contactUs textarea {
+    resize: vertical;
+}
+
+#contactUs iframe {
+    border: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+    #contactUs .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    #contactUs.col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    #contactUs .col-lg-6:nth-child(odd) {
+        padding-right: 15px;
+    }
+    #contactUs .col-lg-6:nth-child(even) {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    #contactUs .form-group {
+        margin-bottom: 10px;
+    }
+    #contactUs label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #contactUs input,#contactUs textarea {
+        width: 100%;
+    }
+    #contactUs .col-sm-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #contactUs .form-check {
+        margin-top: 15px;
+    }
+    #contactUs .form-check-label {
+        display: inline;
+        margin-left: 5px;
+    }
+}
+
+footer {
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer .list-inline {
+    padding-left: 0;
+}
+
+footer .list-inline-item {
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    footer .col-lg-6 {
+        margin-bottom: 20px;
+    }
+}
+
+footer a{
+    color: #FFFFFF;
+}
